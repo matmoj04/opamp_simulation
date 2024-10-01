@@ -1,0 +1,73 @@
+(ExpressProject "LM3886"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File ".\lm3886.olb"
+        (Type "Schematic Library")))
+    (NoModify)
+    (File ".\lm3886.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (RootChangedForceReNetlist "x"))
+  (Folder "Outputs"
+    (File ".\lm3886-pspicefiles\lm3886_tr\lm3886_tr.net"
+      (Type "Report"))
+    (File ".\lm3886-pspicefiles\lm3886_ac\lm3886_ac.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\lm3886-pspicefiles\lm3886_ac\ac.sim"
+        (DisplayName "LM3886_AC-AC")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\lm3886-pspicefiles\lm3886_tr\tr.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\lm3886-pspicefiles\lm3886_tr\tr.sim"
+        (DisplayName "LM3886_TR-TR")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (LM3886
+      (FullPartName "LM3886.Normal")
+      (LibraryName
+         "C:\ELAB_MODEL_WS\ELAB_MODEL_DS\PART_NUMBERS\LM3886\RELEASE_TI\PSPICE\LM3886_PSPICE_AIO\LM3886.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory
+     "C:\Users\a0199733\Documents\Arash_PARTS_FOLDER\LM3886_modify\Release_TI\PSPICE\LM3886_PSPICE_AIO")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\ELAB_MODEL_WS\ELAB_MODEL_DS\Part_Numbers\LM3886\Release_TI\PSPICE\LM3886_PSPICE_AIO\lm3886.dsn")
+      (Path "Design Resources"
+         "C:\ELAB_MODEL_WS\ELAB_MODEL_DS\Part_Numbers\LM3886\Release_TI\PSPICE\LM3886_PSPICE_AIO\lm3886.dsn"
+         "LM3886_TR")
+      (Path "Design Resources"
+         "C:\ELAB_MODEL_WS\ELAB_MODEL_DS\Part_Numbers\LM3886\Release_TI\PSPICE\LM3886_PSPICE_AIO\lm3886.dsn"
+         "LM3886_AC")
+      (Path "Design Resources"
+         "C:\ELAB_MODEL_WS\ELAB_MODEL_DS\Part_Numbers\LM3886\Release_TI\PSPICE\LM3886_PSPICE_AIO\lm3886.dsn"
+         "Design Cache")
+      (Path "Design Resources" "Library")
+      (Path "Outputs")
+      (Path "PSpice Resources")
+      (Path "PSpice Resources" "Simulation Profiles")
+      (Select "Design Resources"
+         "C:\ELAB_MODEL_WS\ELAB_MODEL_DS\Part_Numbers\LM3886\Release_TI\PSPICE\LM3886_PSPICE_AIO\lm3886.dsn"
+         "LM3886_AC"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -30 -7 362 -6 581"))
+      (Tab 0)))
+  (MPSSessionName "a0199733"))

@@ -1,0 +1,52 @@
+
+**** 07/06/12 13:11:40 ******* PSpice 16.2.0 (Oct 2008) ******* ID# 0 ********
+
+ ** Profile: "LM3886_TR-AC"  [ C:\Users\a0199733\Documents\Arash_PARTS_FOLDER\LM3886_modify\Release_TI\PSPICE\LM3886_PSPICE_AIO\LM388
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "AC.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_16.2\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 10ms 0 10n 
+.OPTIONS STEPGMIN
+.OPTIONS PREORDER
+.OPTIONS ITL1= 1000
+.OPTIONS ITL2= 400
+.OPTIONS ITL4= 400
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\LM3886_TR.net" 
+
+
+
+**** INCLUDING LM3886_TR.net ****
+* source LM3886
+V_V5         VCM N17769  
++SIN 0 2 2k 0 0 0
+E_E1         VCM VSS VDD VSS 0.5
+V_V1         VDD 0 28Vdc
+V_V2         VSS 0 -28Vdc
+X_U1         VCM N17483 VDD VSS VOUT MUTE LM3886
+R_R2         VOUT N17483  20k  
+R_R3         VCM VOUT  8  
+V_V4         MUTE 0 0Vdc
+R_R5         N17483 N17769  10k  
+
+**** RESUMING AC.cir ****
+.END
+
+ERROR -- Subcircuit LM3886 used by X_U1 is undefined
